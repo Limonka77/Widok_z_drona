@@ -1,0 +1,39 @@
+<div class="container">
+  <app-carousel></app-carousel>
+
+
+  <div class="row skills">
+    <div class="col-md-4 text-center py-3" *ngFor="let skill of skills">
+      <i [class]="skill.fa"> </i>
+      <h3 class="py-5">{{skill.title}}</h3>
+      <p>{{skill.pharagraph}}</p>
+    </div>
+  </div>
+
+  <div class="row opinions">
+    <div class="col-md-12">
+      <blockquote class="blockquote">
+        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia cupiditate, minus quod adipisci possimus excepturi nobis, facilis ut temporibus repellendus omnis voluptate dicta dolorum sint animi incidunt esse aut nesciunt exercitationem laboriosam laudantium impedit! Molestias?</p>
+        <footer class="blockquote-footer">Katarzyna Michalska
+          <cite title="Source Title">Gliwice</cite>
+        </footer>
+      </blockquote>
+
+      <blockquote class="blockquote ">
+        <p class="mb-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure earum ipsum, officia, doloribus beatae eveniet facilis ea quas aliquam qui dolorum voluptatem perspiciatis culpa, vitae quod dolor excepturi deleniti consectetur dicta cum. Corporis ad incidunt consequuntur laudantium, blanditiis ipsum officia.</p>
+        <footer class="blockquote-footer">Janina Wójt
+          <cite title="Source Title">Toruń</cite>
+        </footer>
+      </blockquote>
+
+
+      <blockquote class="blockquote text-center">
+        <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate natus porro, veniam nam praesentium ducimus vero maiores quam ipsam tenetur error facere impedit! Rerum mollitia ipsum aut!</p>
+        <footer class="blockquote-footer text-right ">Jan Kowalski
+          <cite title="Source Title">Bydgoszcz</cite>
+        </footer>
+      </blockquote>
+    </div>
+  </div>
+
+</div>

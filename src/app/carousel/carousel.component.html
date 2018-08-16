@@ -1,0 +1,10 @@
+<div class="container">
+    <carousel class="container-fluid">
+        <slide *ngFor="let photo of photos">
+          <img [src]="photo.photoPath" alt="first slide" style="display: block; width: 100%;">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>{{photo.name}}</h3>
+          </div>
+        </slide>
+      </carousel>
+</div>
