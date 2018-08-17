@@ -14,7 +14,11 @@ import {
 export class HeaderComponent implements OnInit {
 
   logoPath = 'assets/images/dron.jpg';
- 
+  navbarOpen = false;
+  
+  toggleNavbar() {
+    this.navbarOpen = !this.navbarOpen;
+  }
 
   constructor() {}
 

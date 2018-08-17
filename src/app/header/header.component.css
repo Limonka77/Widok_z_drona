@@ -1,0 +1,27 @@
+li {
+    color:  #343a40;
+    font-weight: bold;
+    font-size: 1.2rem;
+    outline: none;
+    cursor: pointer;
+}
+li:hover {
+color: #C82333 ;
+}
+li:after{
+content: '';
+display: block;
+width: 0;
+height: 2px;
+background: #C82333;
+transition: width .5s;
+}
+li:hover::after {
+    width: 100%;
+}
+
+
+
+button{
+    outline: none;
+}

@@ -15,6 +15,7 @@ import { NgxGalleryModule } from 'ngx-gallery';
 import { CarouselComponent } from './carousel/carousel.component';
 
 
+
 const appRoutes: Routes = [
   { path: 'Home', component:  HomeComponent},
   { path: 'About', component:  AboutComponent },
@@ -44,6 +45,7 @@ const appRoutes: Routes = [
     FormsModule,
     CarouselModule.forRoot(),
     NgxGalleryModule
+  
   ],
   providers: [],
   bootstrap: [AppComponent]

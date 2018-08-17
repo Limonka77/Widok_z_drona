@@ -1,3 +1,29 @@
-<p>
-  contact works!
-</p>
+<div class="container">
+    <h1 class="font-weight-bold text-dark py-3">Napisz do Nas:</h1>
+  <div class=" d-flex justify-content-center">
+
+ 
+  <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+    <div style="display: inline-grid">
+      <label for="topic">Temat:</label>
+      <input [(ngModel)]="message.topic" #topic="ngModel" type="text" id="topic" name="topic" required>
+      <div *ngIf="!topic.valid && topic.dirty">Pole wymagane</div>
+
+      <label for="message">Wiadomość:</label>
+      <textarea [(ngModel)]="message.message" #mes="ngModel" name="message" id="message" required cols="50" rows="10"></textarea>
+      <div *ngIf="!mes.valid && mes.dirty">Pole wymagane</div>
+
+      <label for="name">Name:</label>
+      <input [(ngModel)]="message.name" #name="ngModel" type="text" id="name" name="name" required>
+      <div *ngIf="!name.valid && name.dirty">Pole wymagane</div>
+
+      <label for="email">Email:</label>
+      <input [(ngModel)]="message.email" #email="ngModel" type="email" email name="email" id="email" required>
+      <div *ngIf="email.errors && email.errors && email.dirty">Twój email jest niepoprawny</div>
+
+      <button class="btn btn-warning my-2"[disabled]="!contactForm.valid" type="submit">Wyślij</button>
+    </div>
+  </form>
+
+</div>
+</div>

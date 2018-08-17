@@ -1,3 +1,17 @@
 <div class="container">
 <app-carousel></app-carousel>
+<h1 class="font-weight-bold  py-3">Nasz Zespół:</h1>
+<div class="row">
+        <div class="col-md-offset-1 col-md-10">
+            <div class="media my-5" *ngFor="let t of team">
+                <div class="pull-left">
+                        <img class="d-flex img-thumbnail  mr-3" [src]="t.imagePath" alt="Michał">
+                </div>
+                <div class="media-body">
+                    <h3 class="media-heading mt-0 font-italic">{{t.teamTitle}}</h3>
+                    <p>{{t.teamContent}}</p>
+                </div>
+            </div>
+        </div>
+</div>
 </div>
