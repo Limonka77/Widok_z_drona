@@ -20,7 +20,10 @@ li:hover::after {
     width: 100%;
 }
 
-
+.navbar {
+    background-color: #ffffff;
+    border-bottom: 2px solid #C82333;
+}
 
 button{
     outline: none;

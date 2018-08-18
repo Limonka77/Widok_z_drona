@@ -3,7 +3,7 @@
   <div class=" d-flex justify-content-center">
 
  
-  <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+  <form (ngSubmit)="onSubmit()" #contactForm="ngForm">
     <div style="display: inline-grid">
       <label for="topic">Temat:</label>
       <input [(ngModel)]="message.topic" #topic="ngModel" type="text" id="topic" name="topic" required>
